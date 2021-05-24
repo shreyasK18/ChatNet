@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+		<link rel="icon" href="./ChatNet__48.ico"/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title>ChatNet App</title>
+	</head>
+	<body>
+		<!-- Trigger/Open The Modal -->
+<!-- <button id="myBtn">Open Modal</button> -->
+		<!-- The Modal -->
+<div id="myModal" class="modal">
+
+	<!-- Modal content -->
+	<!-- <div class="modal-content">
+	  <div class="modal-header">
+		<span class="close">&times;</span>
+		<h3>Welcome to ChatNet!</h3>
+	  </div>
+	  <div class="modal-body">
+		<p>ChatNet is a chat application application built using Javascipt and Socket.io and is to be used strictly for demonstrative purposes</p>
+
+	  </div>
+	  -->
+	</div>
+  
+  </div>
+		<div class="join-container">
+			
+			<header class="join-header">
+				<svg width="150" height="50" >
+					<rect x="5" y="10" rx="3" ry="3" width="40" height="6" style="fill:#fff;opacity:0.5" />
+					<rect x="15" y="20" rx="3" ry="3" width="40" height="6" style="fill:#fff;opacity:0.5" />
+				  <rect x="5" y="30" rx="3" ry="3" width="40" height="6" style="fill:#fff;opacity:0.5" />
+					 <rect x="15" y="40" rx="3" ry="3" width="40" height="6" style="fill:#fff;opacity:0.5" />
+					 <text x="60" y="35" fill="#fff" font-size="23">ChatNet</text>
+				  </svg>
+			</header>
+			<main class="join-main">
+				<form action="chat.html">
+					<div class="form-control">
+						<label for="username">Username</label>
+						<input
+							type="text"
+							name="username"
+							id="username"
+							placeholder="Enter username..."
+							required
+						/>
+					</div>
+					<div class="form-control">
+						<label for="group">Group</label>
+						<select name="group" id="group">
+							<option value="Group A">Group A</option>
+							<option value="Group B">Group B</option>
+							<option value="Group C">Group C</option>
+							<option value="Group D">Group D</option>
+							<option value="Group E">Group E</option>
+							<option value="Group F">Group F</option>
+						</select>
+					</div>
+					<button type="submit" class="btn">Join Chat</button>
+				</form>
+			</main>
+		</div>
+	</body>
+	<script src="js/modal.js"></script>
+
+</html>
