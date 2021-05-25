@@ -66,11 +66,14 @@ io.on('connection', socket =>{
     });
 });
 
-if(process.env.NODE_ENV === 'production'){
-    app.get('*',(req,res)=>{
-        res.sendFile(path.resolve(__dirname,'index.html'));
-    });
-}
-server.listen(3000 || process.env.port, function(){
-    console.log(`Server running on port 3000`);
-});
+// if(process.env.NODE_ENV === 'production'){
+//     app.get('*',(req,res)=>{
+//         res.sendFile(path.resolve(__dirname,'index.html'));
+//     });
+// }
+// server.listen(3000 || process.env.port, function(){
+//     console.log(`Server running on port 3000`);
+// });
+app.get('/',(req,res)=>{
+            res.sendFile(path.resolve(__dirname,'public/index.html'));
+        });
