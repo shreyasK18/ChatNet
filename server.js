@@ -66,4 +66,11 @@ io.on('connection', socket =>{
     });
 });
 
-server.listen(PORT,()=>console.log(`Server running on port ${PORT}`));
+if(process.env.NODE_ENV === 'production'){
+    app.get('*',(req,res)=>{
+        res.sendFile(path.resolve(__dirname,'index.html'));
+    });
+}
+server.listen(3000 || process.env.port, function(){
+    console.log(`Server running on port 3000`);
+});
