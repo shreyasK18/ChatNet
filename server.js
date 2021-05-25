@@ -75,6 +75,7 @@ io.on('connection', socket =>{
 // app.get('/',(req,res)=>{
 //     res.sendFile(path.resolve(__dirname,'public/index.html'));
 // });
-server.listen(3000 || process.env.port, function(){
-    console.log(`Server running on port 3000`);
+server.listen(process.env.PORT || 3000, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+    
 });
