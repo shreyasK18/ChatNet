@@ -2,3 +2,5 @@ package-lock.json
 node_modules
 js/modal.js
 .gitignore
+npm-debug.log
+.DS_Store
