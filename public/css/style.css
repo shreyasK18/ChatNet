@@ -490,5 +490,7 @@ a {
 	color: #000;
   }
   @media (prefers-color-scheme: dark) {
-
+	.join-main{
+		background-color: #fff;
+	}
 }
