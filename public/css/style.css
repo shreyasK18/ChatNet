@@ -174,14 +174,17 @@ a {
 }
 
 .sidebar-arrow{
+	width: -moz-fit-content;
+	height:  -moz-fit-content;;
     position: absolute;
     display: block;
     color:#fff;
     padding:10px;
 	background-color:#5196e0;
     width:fit-content;
-    
-    z-index: 10;
+    width:-moz-fit-content;
+	z-index: 10;
+	height: -moz-fit-content;
     height: fit-content;
     
 
@@ -191,8 +194,10 @@ a {
 	color:#fff;
     padding:10px;
 	background-color:#5196e0;
+	width:-moz-fit-content;
     width:fit-content;
-    z-index: 10;
+	z-index: 10;
+	height:-moz-fit-content ;
     height: fit-content;
 }
 /* Join Page */
