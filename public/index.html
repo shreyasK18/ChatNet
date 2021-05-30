@@ -16,11 +16,15 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<title>ChatNet App</title>
 	<script type="text/javascript">
-		 function preventBack() { window.history.forward(); }  
+		history.pushState(null, document.title, location.href);
+window.addEventListener('popstate', function (event)
+{
+  history.pushState(null, document.title, location.href);
+}); 
    
 	</script>
 	</head>
-	<body onLoad="preventBack();">
+	<body >
 
 <div id="myModal" class="modal">
 	</div>
