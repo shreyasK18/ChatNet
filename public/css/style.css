@@ -306,7 +306,13 @@ a {
     .chat-main {
         display: grid;
         grid-template-columns: 1.5fr 0.1fr 2.5fr; 
-    }
+	}
+	.chat-header {
+		
+		
+		padding: 10px 15px 10px 0px;
+	
+	}
 	h3{
         font-size: 11px;
     }
