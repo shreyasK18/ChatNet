@@ -30,7 +30,7 @@ io.on('connection', socket =>{
          // Welcome current user
         socket.emit('botMessage',formatMessage(botName,"Welcome to ChatNet!"));
 
-        // Brodcast when a user joins 
+        // Broadcast when a user joins 
         // send a message to everyone except the current user
         socket.broadcast.to(user.group).emit('botMessage',formatMessage(botName,`${user.username} has joined the chat`));
 
