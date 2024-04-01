@@ -31,7 +31,7 @@ io.on('connection', socket =>{
          // Welcome current user
         socket.emit('botMessage',formatMessage(botName,"Welcome to ChatNet!"));
 
-        // Brodcast when a user joins 
+        // Broadcast when a user joins 
         // send a message to everyone except the current user
         socket.broadcast.to(user.group).emit('botMessage',formatMessage(botName,`${user.username} has joined the chat`));
 
@@ -67,15 +67,4 @@ io.on('connection', socket =>{
     });
 });
 
-// if(process.env.NODE_ENV === 'production'){
-//     app.get('',(req,res)=>{
-//         res.sendFile(path.resolve(__dirname,'public/index.html'));
-//     });
-// }
-// app.get('/',(req,res)=>{
-//     res.sendFile(path.resolve(__dirname,'public/index.html'));
-// });
-server.listen(process.env.PORT || 3000, function(){
-    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-    
-});
+server.listen(PORT,()=>console.log(`Server running on port ${PORT}`));
