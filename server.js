@@ -21,7 +21,8 @@ app.use(express.static(path.join(__dirname,'public')));
 // Run When IO Connects
 io.on('connection', socket =>{
     // On Join Group
-   
+   console.log("New WS Connection");
+   console.log("PORT: "+PORT);
     socket.on('joinGroup',({username,group})=>{
    
     
