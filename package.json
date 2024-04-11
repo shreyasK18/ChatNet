@@ -5,8 +5,9 @@
     "main": "server.js",
     "scripts": {
         "test": "node server",
-        "dev": "nodemon server",
-        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run test"
+        "dev": "nodemon server"
+        
+      
     },
     "author": "Shreyas Kanchan",
     "license": "ISC",
