@@ -6,13 +6,13 @@
     "scripts": {
         "test": "node server",
         "dev": "nodemon server",
-        "build":"node server"
+        "build":"nodemon server"
       
     },
     "author": "Shreyas Kanchan",
     "license": "ISC",
     "engines": {
-        "node": ">12.x"
+        "node": "20.x"
     },
     "dependencies": {
         "axios": "^1.6.8",
