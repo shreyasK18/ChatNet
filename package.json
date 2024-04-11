@@ -5,8 +5,8 @@
     "main": "server.js",
     "scripts": {
         "test": "node server",
-        "dev": "nodemon server"
-        
+        "dev": "nodemon server",
+        "build":"node server"
       
     },
     "author": "Shreyas Kanchan",
